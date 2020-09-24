@@ -6,8 +6,8 @@ a.	The Dataset consists of roughly 18,000 train images and 6,000 test images of 
 All images containing a person with a covered face are labeled "1" meaning the person in the image is wearing a mask, it's important to note that mask is not the only form of "face cover" which is recognized as a positively labeled image.
 Examples of training data images (original size):
 ![image](https://user-images.githubusercontent.com/26842519/94170473-cc0b5400-fe98-11ea-90a2-3d1c9209ff62.png)
-![image](https://user-images.githubusercontent.com/26842519/94170490-d1689e80-fe98-11ea-962d-a10b9f55cdd8.png)
 
+![image](https://user-images.githubusercontent.com/26842519/94170490-d1689e80-fe98-11ea-962d-a10b9f55cdd8.png)
 
 Examples of test data images (original size):
 ![image](https://user-images.githubusercontent.com/26842519/94170515-d9284300-fe98-11ea-93d1-56ed5fb485f1.png)
