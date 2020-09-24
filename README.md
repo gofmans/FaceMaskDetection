@@ -1,6 +1,7 @@
 # FaceMaskDetection
 
 1.	Exploratory Data Analysis
+
 a.	The Dataset consists of roughly 18,000 train images and 6,000 test images of people faces, some of which are wearing different forms of face masks and covers.
 All images containing a person with a covered face are labeled "1" meaning the person in the image is wearing a mask, it's important to note that mask is not the only form of "face cover" which is recognized as a positively labeled image.
 Examples of training data images (original size):
