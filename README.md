@@ -16,9 +16,11 @@ b.	Key insights from the data:
 -	The images are of different size, meaning we will have to resize them before handing them over to our network.
 -	Unlike basic open source data sets for deep learning such as Fashion-Mnist, our images are taken in different orientations, angles and directions meaning we don’t have to add any form of random rotation and crop for them to improve our network.
 2.	Network Experiments – Net #1
+
 a.	Data Loading and Preprocess:
 To use the Pytorch package to build our network we had to build a custom data loader for our dataset, the resulting loader output is 32X32 size images.
 As mentioned above, we chose not to use any form of data augmentation because of the nature of the images in the dataset.
+
 b.	Architecture:
 Our network consists of 6 convolution layers, and 1 fully connected layer:
 
@@ -27,13 +29,17 @@ Our network consists of 6 convolution layers, and 1 fully connected layer:
 ![image](https://user-images.githubusercontent.com/26842519/94170568-e80ef580-fe98-11ea-8040-4a9afc3aec02.png)
 
 c.	Loss Function – We choose the Negative Log Likelihood Loss as we are dealing with a classification task.
+
 d.	Optimizer – We choose the Adam optimizer which is an extension of the classical SGD algorithm as it introduces individual learning rate for each parameter and converges faster.
+
 e.	Regularization – We choose to use weight decay as our regularization technique instead of the classical dropout.
 Other Parameters:
+
 
 ![image](https://user-images.githubusercontent.com/26842519/94170592-ee9d6d00-fe98-11ea-94c8-f5a91b190f2e.png)
 ![image](https://user-images.githubusercontent.com/26842519/94170629-f9f09880-fe98-11ea-929d-728b321472cf.png)
 ![image](https://user-images.githubusercontent.com/26842519/94170652-feb54c80-fe98-11ea-982e-232fdad89c6b.png)
+
 i.	Key Insights:
 -	Increasing the number of training epochs is necessary to achieve high performance. 
 -	Increasing the size of the first convolution filter to 5X5 proved very useful to our model.
@@ -41,10 +47,13 @@ i.	Key Insights:
 -	We might want to use dropout in our next attempt as another form of regularization while we are building more complex networks.
 
 3.	Network Experiments – Net #2
+
 a.	Data Loading and preprocess:
 After examining the data closely, we noticed that most images are bigger than 32X32 pixels and compressing them to that size might harm our model performance, hence, we decided that our second networks should use 64X64 Images (we did not choose 128X128 because half of the images on the training set are smaller than that size and extensive stretching might distort the images).
 As mentioned above, in this attempt we also chose not to use any form of data augmentation.
+
 b.	Architecture:
+
 Apart from adding another convolution layer and increasing the size of filters from 3 to 5, we will use similar architecture as our first attempt:
 
 ![image](https://user-images.githubusercontent.com/26842519/94170672-04ab2d80-fe99-11ea-8834-1c86a99397dc.png)
