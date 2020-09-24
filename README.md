@@ -32,7 +32,7 @@ d.	Optimizer – We choose the Adam optimizer which is an extension of the class
 e.	Regularization – We choose to use weight decay as our regularization technique instead of the classical dropout.
 
 Other Parameters:
-![image](https://user-images.githubusercontent.com/26842519/94170652-feb54c80-fe98-11ea-982e-232fdad89c6b.png)
+![image](https://user-images.githubusercontent.com/26842519/94173222-48536680-fe9c-11ea-98d3-7e55cd6426b6.png)
 
 ![image](https://user-images.githubusercontent.com/26842519/94173129-1b9f4f00-fe9c-11ea-917c-a9e830cad99f.png)
 
