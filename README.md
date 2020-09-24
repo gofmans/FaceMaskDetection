@@ -32,6 +32,8 @@ d.	Optimizer – We choose the Adam optimizer which is an extension of the class
 e.	Regularization – We choose to use weight decay as our regularization technique instead of the classical dropout.
 
 Other Parameters:
+![image](https://user-images.githubusercontent.com/26842519/94172916-cebb7880-fe9b-11ea-9a74-5d939fd28f8c.png)
+
 ![image](https://user-images.githubusercontent.com/26842519/94170652-feb54c80-fe98-11ea-982e-232fdad89c6b.png)
 
 
@@ -52,7 +54,7 @@ b.	Architecture:
 
 Apart from adding another convolution layer and increasing the size of filters from 3 to 5, we will use similar architecture as our first attempt:
 
-![image](https://user-images.githubusercontent.com/26842519/94170672-04ab2d80-fe99-11ea-8834-1c86a99397dc.png)
+![image](https://user-images.githubusercontent.com/26842519/94172942-d844e080-fe9b-11ea-8c8f-18cf9489fce8.png)
 
 ![image](https://user-images.githubusercontent.com/26842519/94170690-08d74b00-fe99-11ea-8b74-cab74332b388.png)
 
