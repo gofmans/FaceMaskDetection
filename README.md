@@ -21,12 +21,9 @@ a.	Data Loading and Preprocess:
 To use the Pytorch package to build our network we had to build a custom data loader for our dataset, the resulting loader output is 32X32 size images.
 As mentioned above, we chose not to use any form of data augmentation because of the nature of the images in the dataset.
 
-b.	Architecture:
-Our network consists of 6 convolution layers, and 1 fully connected layer:
+![image](https://user-images.githubusercontent.com/26842519/94171929-86e82180-fe9a-11ea-98f4-ef0c6bacfc96.png)
 
-![image](https://user-images.githubusercontent.com/26842519/94170553-e3e2d800-fe98-11ea-8215-54a73a841400.png)
-
-![image](https://user-images.githubusercontent.com/26842519/94170568-e80ef580-fe98-11ea-8040-4a9afc3aec02.png)
+![image](https://user-images.githubusercontent.com/26842519/94171953-8e0f2f80-fe9a-11ea-887c-40f2bf2f2a66.png)
 
 c.	Loss Function – We choose the Negative Log Likelihood Loss as we are dealing with a classification task.
 
@@ -34,10 +31,6 @@ d.	Optimizer – We choose the Adam optimizer which is an extension of the class
 
 e.	Regularization – We choose to use weight decay as our regularization technique instead of the classical dropout.
 Other Parameters:
-
-
-![image](https://user-images.githubusercontent.com/26842519/94170592-ee9d6d00-fe98-11ea-94c8-f5a91b190f2e.png)
-![image](https://user-images.githubusercontent.com/26842519/94170629-f9f09880-fe98-11ea-929d-728b321472cf.png)
 ![image](https://user-images.githubusercontent.com/26842519/94170652-feb54c80-fe98-11ea-982e-232fdad89c6b.png)
 
 i.	Key Insights:
